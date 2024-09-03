@@ -10,6 +10,7 @@ Clicking the arrows will direct you to your previous / next ranked beatmap.
 - [Features](#features)
 - [Requirements](#requirements)
 - [How to Use](#how-to-use)
+- [Versions](#versions)
 
 ## Features
 
