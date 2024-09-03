@@ -28,8 +28,17 @@ def reverse_links():
         # Scrape and get the list of links
         link_list = scrape.main()
         
+        # Determine the directory where the script is located
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+
+        # Define the file path for the output in the script's directory
+        output_file = os.path.join(script_dir, "generated_bbcodes.txt")
+
         if not link_list:
-            print("No links were obtained. Please check the scrape module.")
+            # If the list is empty, write "User has no ranked maps" to the file
+            with open(output_file, "w") as file:
+                file.write("User has no ranked maps.\n")
+            print(f"No ranked maps found. Message written to: {output_file}")
             return
 
         # Check number of links obtained
@@ -40,12 +49,6 @@ def reverse_links():
 
         # Check number of BBCode blocks generated
         print(f"Total number of BBCode blocks generated: {len(bbcodes)}")
-
-        # Determine the directory where the script is located
-        script_dir = os.path.dirname(os.path.realpath(__file__))
-
-        # Define the file path for the output in the script's directory
-        output_file = os.path.join(script_dir, "generated_bbcodes.txt")
 
         # Write the BBCodes to a text file in the script's directory
         with open(output_file, "w") as file:
