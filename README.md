@@ -53,3 +53,13 @@ pip install selenium webdriver_manager
 6. **Apply the BBCode**:
    - Manually copy and paste the first line of the BBCode to your first ranked beatmap, you should see it links to the second ranked beatmap (if it exists).
    - Each line corresponds to one ranked beatmap.
+
+
+## Versions
+
+### Version 1.0.0 - Initial Release
+- **Date Released**: 2024-09-03
+- **Features**:
+  - Basic BBCode generation for osu! ranked beatmaps.
+  - Supports navigation between previous and next beatmaps using arrows.
+  - Outputs generated BBCode to `generated_bbcodes.txt`.
