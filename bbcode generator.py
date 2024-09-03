@@ -36,7 +36,7 @@ def reverse_links():
 
         if not link_list:
             # If the list is empty, write "User has no ranked maps" to the file
-            with open(output_file, "w") as file:
+            with open(output_file, "w", encoding="utf-8") as file:
                 file.write("User has no ranked maps.\n")
             print(f"No ranked maps found. Message written to: {output_file}")
             return
@@ -51,7 +51,7 @@ def reverse_links():
         print(f"Total number of BBCode blocks generated: {len(bbcodes)}")
 
         # Write the BBCodes to a text file in the script's directory
-        with open(output_file, "w") as file:
+        with open(output_file, "w", encoding="utf-8") as file:
             for bbcode in bbcodes:
                 file.write(bbcode + "\n")
         
