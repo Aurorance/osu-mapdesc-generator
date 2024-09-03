@@ -3,6 +3,8 @@
 This project allows you to generate BBCode blocks for your ranked osu! beatmaps.
 Clicking the arrows will direct you to your previous / next ranked beatmap.
 
+If there are bugs / suggestions to add more features let me know. You can find me at osu! direct messages or discord.
+
 ![Preview](https://github.com/user-attachments/assets/101816ef-d81f-49c2-9da3-7d77dcf62103)
 
 ## Table of Contents
